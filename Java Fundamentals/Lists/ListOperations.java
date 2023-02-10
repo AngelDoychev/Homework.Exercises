@@ -8,8 +8,8 @@ import java.util.stream.Collectors;
 public class ListOperations {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        List<Integer> numbers = Arrays.stream(scanner.nextLine().split(" ")).map(Integer::parseInt).collect(Collectors.toList());
-        String[] command = scanner.nextLine().split(" ");
+        List<Integer> numbers = Arrays.stream(scanner.nextLine().split("\\s+")).map(Integer::parseInt).collect(Collectors.toList());
+        String[] command = scanner.nextLine().split("\\s+");
         while (!command[0].equals("End")) {
             switch (command[0]) {
                 case "Add":
@@ -52,7 +52,7 @@ public class ListOperations {
             command = scanner.nextLine().split(" ");
         }
         for (int number : numbers) {
-            System.out.print(number + " ");
+            System.out.print(number + "\\s+");
         }
     }
 }
