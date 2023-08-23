@@ -1,0 +1,25 @@
+body {
+    background-color: #e4e978;
+}
+article, header {
+    color: black;
+}
+article, p {
+    color: black;
+}
+article {
+    background-color: #f2f4c0;
+    width: 700px;
+    border: 1px solid #b2ad7d;
+    margin: 15px 10px;
+    padding: 5px 15px;
+    
+}
+section article p{
+    color: #4c7658;
+    font-style: italic;
+}
+section article {
+    color: #4c7658;
+    font-style: italic;
+}
